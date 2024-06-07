@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -12,7 +12,7 @@ namespace ServerInspector.Servers
     /// The ServerViewModel ViewModel class.
     /// </summary>
     [ViewModel]
-    public class ServerViewModel : ViewModel<ShellExtensionsRegistrationInfo>
+    public class ServerViewModel : ViewModel<ShellExtensionRegistrationInfo>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ServerViewModel"/> class.
@@ -26,30 +26,30 @@ namespace ServerInspector.Servers
         }
 
 
-        public override void FromModel(ShellExtensionsRegistrationInfo model)
+        public override void FromModel(ShellExtensionRegistrationInfo model)
         {
             Model = model;
         }
 
-        public override void ToModel(ShellExtensionsRegistrationInfo model)
+        public override void ToModel(ShellExtensionRegistrationInfo model)
         {
             throw new NotImplementedException();
         }
 
-        
+
         /// <summary>
         /// The NotifyingProperty for the Model property.
         /// </summary>
         private readonly NotifyingProperty ModelProperty =
-          new NotifyingProperty("Model", typeof(ShellExtensionsRegistrationInfo), default(ShellExtensionsRegistrationInfo));
+          new NotifyingProperty("Model", typeof(ShellExtensionRegistrationInfo), default(ShellExtensionRegistrationInfo));
 
         /// <summary>
         /// Gets or sets Model.
         /// </summary>
         /// <value>The value of Model.</value>
-        public ShellExtensionsRegistrationInfo Model
+        public ShellExtensionRegistrationInfo Model
         {
-            get { return (ShellExtensionsRegistrationInfo)GetValue(ModelProperty); }
+            get { return (ShellExtensionRegistrationInfo)GetValue(ModelProperty); }
             set { SetValue(ModelProperty, value); }
         }
     }
