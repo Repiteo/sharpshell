@@ -1,0 +1,9 @@
+# Normalize EOL for all files that Git considers text files
+* text=auto eol=lf
+
+# Except for Visual Studio files
+*.sln eol=crlf
+*.csproj eol=crlf
+*.vcxproj eol=crlf
+*.props eol=crlf
+*.filters eol=crlf
