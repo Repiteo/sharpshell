@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -43,7 +43,7 @@ namespace SharpShell.Helpers
         /// </returns>
         public static bool IS_INTRESOURCE(IntPtr resource)
         {
-            return ((uint)resource) <= ushort.MaxValue;
+            return unchecked((uint)(long)resource <= ushort.MaxValue);
         }
     }
 }

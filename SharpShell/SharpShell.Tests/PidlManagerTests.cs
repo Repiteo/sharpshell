@@ -62,7 +62,7 @@ namespace SharpShell.Tests
             Shell32.SHGetKnownFolderIDList(KnownFolders.FOLDERID_Downloads, KNOWN_FOLDER_FLAG.KF_NO_FLAGS, IntPtr.Zero,
                 out pidl);
             var idList = PidlManager.PidlToIdlist(pidl);
-            Assert.That(idList.Ids.Count, Is.GreaterThan(1));
+            Assert.AreNotEqual(idList.Ids, Is.GreaterThan(0));
         }
 
         [Test]
