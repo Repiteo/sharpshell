@@ -8,12 +8,12 @@ indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{sln,csproj,vcxproj,props,filters}]
+[*.{sln,csproj,vcxproj}]
 end_of_line = crlf
 charset = utf-8-bom
 
 [*.sln]
 indent_style = tab
 
-[*.{csproj,vcxproj,props,filters,nuspec,resx,manifest}]
+[*.{csproj,vcxproj,props,filters,targets,nuspec,resx,manifest,yml,yaml}]
 indent_size = 2

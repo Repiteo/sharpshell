@@ -3,8 +3,6 @@
     <TargetFramework>net48</TargetFramework>
     <OutputType>WinExe</OutputType>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <CodeAnalysisLogFile>$(TargetDir)\$(Configuration)\ShellExtensionManager.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
